@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Apocalypse Survival Test</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1c1c; /* Dark background */
+            color: #e6e6e6; /* Light font for readability */
+            font-family: 'Creepster', cursive; /* Funky horror font */
+            /* cursor: url('cursor.png'), auto; */   
+        }
+        .question-card {
+            background-color: #2b2b2b;
+            border: 2px solid #900; /* Red border for apocalypse feel */
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0; 
+            width:100%;
+        }
+        .box {
+            background-color: #2b2b2b;
+            border: 2px solid #900; /* Red border for apocalypse feel */
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0; 
+            width:100%;
+        }
+        .question-card-2 {
+            background-color: #2b2b2b;
+            border: 2px solid #900; /* Red border for apocalypse feel */
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            display: flex;
+        }
+.question-card h3 {
+    color: #ff4d4d; /* Red color for headers */
+    margin-bottom: 15px;
+}
+
+/* Checkbox Styles */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Spacing between checkboxes */
+    margin: 20px;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    accent-color: #ff4d4d; /* Red color for checkbox */
+    margin-right: 25px; /* Space between checkbox and label */
+}
+
+.form-check-label {
+    font-size: 18px;
+}
+
+.checkRate-boc{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+
+        .survival-btn {
+            background-color: #e60000; /* Blood-red button */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .survival-btn:hover {
+            background-color: #e60000;
+            color: #fff;
+        }
+        h1, h2 {
+            font-family: 'Creepster', cursive; /* Use the same horror font for headings */
+        }
+    </style>
+    <!-- Funky horror font -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-4" style="color: #e60000;">Zombie Apocalypse Survival Test</h1>
+        <h2 class="mb-4">Will You Survive?</h2>
+
+        <div style="display: flex;justify-content: center;">
+            <h6 style="color:#e60000; margin-right: 10px" >Note:</h6>
+                <h6 style="color:#e6e6e6">Please fill this without Conscience(manasatchi) and there no correct and incorrect in this scenario</h6>
+
+        </div>
+
+        <!-- Physical Skills Checkbox -->
+         <div class="box">
+            <h3>Select Your Role</h3>
+            <p>Choose the role that best describes you for this zombie apocalypse survival test:</p>
+            <div class="container mt-5" style="display: flex;justify-content: center;">
+                
+                
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="role" id="gym-guy" value="Gym Guy" required>
+                    <label class="form-check-label" for="gym-guy">
+                        <strong>Gym Guy:</strong>
+                    </label>
+                </div>
+            
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="role" id="athletic-guy" value="Athletic Guy">
+                    <label class="form-check-label" for="athletic-guy">
+                        <strong>Athletic Guy:</strong> 
+                    </label>
+                </div>
+            
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="role" id="nerd-guy" value="Nerd Guy">
+                    <label class="form-check-label" for="nerd-guy">
+                        <strong>Nerd Guy:</strong>
+                    </label>
+                </div>
+            
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="role" id="noob-guy" value="Noob Guy">
+                    <label class="form-check-label" for="noob-guy">
+                        <strong>Noob Guy:</strong>
+                    </label>
+                </div>
+            </div>
+         </div>
+        
+        
+        <!-- Scenario-Based Questions -->
+        <div class="question-card" >
+            <div class="scenario-group" style="margin: 25px;">
+            <label>1. You’re trapped in a building surrounded by zombies. What’s your strategy?</label>
+                <select name="scenario1">
+                    <option value="1">Hide and wait it out</option>
+                    <option value="2">Find an alternate escape route</option>
+                    <option value="3">Distract them and make a run for it</option>
+                </select>
+            </div>
+            <div class="scenario-group" style="margin: 25px;">
+                <label>2. You’re out of food and water, and you come across a river that seems contaminated. You’re extremely dehydrated. What’s your course of action?</label>
+                <select name="scenario2">
+                    <option value="1">Take the risk and drink the river water immediately</option>
+                    <option value="2"> Boil the water first to try and make it safer to drink.</option>
+                    <option value="3">Move on and try to find a safer water source, even if it means pushing yourself to the limit.</option>
+                </select>
+            </div>
+            <div class="scenario-group" style="margin: 25px;">
+                <label>3. While traveling with a group of survivors, one of them is bitten by a zombie but hasn't turned yet. What do you do?</label>
+                <select name="scenario3">
+                    <option value="1">Immediately confront and isolate them from the group.</option>
+                    <option value="2"> Monitor them closely but keep them with the group for now.</option>
+                    <option value="3"> Leave them behind to protect the group, even if they seem fine</option>
+                </select>
+            </div>
+            <div class="scenario-group" style="margin: 25px;">
+                <label>4. Your crush is trapped in a crowd of zombies, and saving them would likely cost you your life. Do you risk it all to save them or prioritize your own survival?</label>
+                <select name="scenario4">
+                    <option value="1">Yes, I would risk my life to save them..</option>
+                    <option value="2">  No, I would prioritize my own survival..</option>
+                </select>
+            </div>
+            
+        </div>
+
+        <!-- Physical Skills Checkbox -->
+        <div class="question-card">
+            <h3>Physical Skills (Select all that apply):</h3><br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="10" id="skill1">
+                <label class="form-check-label" for="skill1">Sprint Running</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="5" id="skill2">
+                <label class="form-check-label" for="skill2">Long-Distance Running</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="10" id="skill3">
+                <label class="form-check-label" for="skill3">Climbing</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="10" id="skill3">
+                <label class="form-check-label" for="skill3">Weapon Handling</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="10" id="skill3">
+                <label class="form-check-label" for="skill3">Swimming</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="10" id="skill3">
+                <label class="form-check-label" for="skill3">Driving</label>
+            </div>
+            </div>
+        
+
+        <!-- Physical Activity Questions -->
+        <div class="question-card">
+            <h3>How long can you run without stopping?</h3>
+            <select class="form-control mb-2">
+                <option value="0">Less than 5 minutes</option>
+                <option value="5">5-10 minutes</option>
+                <option value="10">10+ minutes</option>
+            </select>
+        </div>
+
+        <!-- Medical History Dropdown -->
+        <div class="question-card">
+            <h3>Medical History:</h3>
+            <select class="form-control mb-2">
+                <option value="0">None</option>
+                <option value="-10">Asthma</option>
+                <option value="-5">Heart Problems</option>
+                <option value="-5">Diabetes</option>
+            </select>
+        </div>
+    </div>
+        <!-- Check Survival Rate Button -->
+         <div class="checkRate-boc"> 
+            <button id="checkRate" class="survival-btn mb-4">Check Survival Rate</button>
+
+         </div>
+
+        <!-- Result Section -->
+        <h2 id="result" class="mt-4" style="text-align: center;"></h2>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script for Calculating Survival Score -->
+    <script>
+        document.getElementById('checkRate').addEventListener('click', function() {
+            let totalScore = 0;
+
+            // Scenario-Based Question Scores
+            totalScore += parseInt(document.querySelector('.question-card select').value);
+
+            // Physical Skills Scores
+            document.querySelectorAll('.form-check-input').forEach(function(skill) {
+                if (skill.checked) totalScore += parseInt(skill.value);
+            });
+
+            // Physical Activity Score
+            let activityScore = document.querySelectorAll('.question-card select')[1].value;
+            totalScore += parseInt(activityScore);
+
+            // Medical History Penalty
+            let medicalScore = document.querySelectorAll('.question-card select')[2].value;
+            totalScore += parseInt(medicalScore);
+
+            // Display Survival Score
+            let resultText;
+            if (totalScore <= 20) {
+                totalScore="20+";
+                resultText = "Instant Death!💀💀💀";
+            } else if (totalScore <= 50) {
+                totalScore="50+";
+                resultText = "Death After a While!💀";
+            } else {
+                totalScore="90+";
+                resultText = "Survives the Zombie Apocalypse!";
+                
+            }
+            
+            document.getElementById('result').innerText = "Survival Score: " + totalScore + " - " + resultText;
+        });
+    </script>
+</body>
+</html>
