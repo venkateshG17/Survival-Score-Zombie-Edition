@@ -24,8 +24,8 @@ document.getElementById('checkRate').addEventListener('click', function () {
 
     // Ensure the life score is capped at 100
     if(lifeScore > 100){
-        lifeScore = 100;
-    }
+        lifeScore = 99;
+        }
 
     // Display the calculated life score in the circular progress bar
     const circleProgress = document.getElementById('circleProgress');
